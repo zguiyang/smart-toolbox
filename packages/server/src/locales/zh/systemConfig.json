@@ -5,10 +5,10 @@
   "validation": {
     "required": {
       "id": "系统配置ID为必填项",
-     "loginSessionDuration": "登录有效期为必填项",
-     "logCleanupPolicy": "日志清理策略为必填项",
-     "captchaValidityPeriod": "验证码有效期为必填项",
-     "systemSenderEmail": "系统发件人邮箱为必填项"
+      "loginSessionDuration": "登录有效期为必填项",
+      "logCleanupPolicy": "日志清理策略为必填项",
+      "captchaValidityPeriod": "验证码有效期为必填项",
+      "systemSenderEmail": "系统发件人邮箱为必填项"
     },
     "types": {
       "loginSessionDuration": "登录有效期类型必须为数字",

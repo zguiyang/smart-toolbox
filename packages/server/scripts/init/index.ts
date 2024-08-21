@@ -17,7 +17,7 @@ async function bootstrap() {
     'This operation will erase all data in the related tables and is irreversible. Do you want to continue?',
     {
       type: 'confirm',
-    },
+    }
   );
   if (!isConfirm) {
     return false;

@@ -5,10 +5,10 @@
   "validation": {
     "required": {
       "id": "id is required for system configuration",
-     "loginSessionDuration": "loginSessionDuration is required",
-     "logCleanupPolicy": "logCleanupPolicy is required",
-     "captchaValidityPeriod": "captchaValidityPeriod is required",
-     "systemSenderEmail": "systemSenderEmail is required"
+      "loginSessionDuration": "loginSessionDuration is required",
+      "logCleanupPolicy": "logCleanupPolicy is required",
+      "captchaValidityPeriod": "captchaValidityPeriod is required",
+      "systemSenderEmail": "systemSenderEmail is required"
     },
     "types": {
       "loginSessionDuration": "loginSessionDuration must be a number",

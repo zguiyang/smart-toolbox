@@ -1,0 +1,20 @@
+.app-layout-wrapper {
+  @apply flex flex-col min-h-screen w-screen;
+}
+
+.app-layout-header {
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+  @apply flex justify-between items-center px-4;
+}
+.app-layout-main {
+  background-color: hsl(var(--background));
+  @apply w-screen flex flex-1 flex-col;
+}
+
+.app-layout-footer {
+  height: 48px;
+  color: #fff;
+  @apply text-center;
+}

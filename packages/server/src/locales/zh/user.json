@@ -1,0 +1,20 @@
+{
+  "createFailed": {
+    "exists": "用户名或邮箱已存在",
+    "unknown": "创建用户失败",
+    "invalidRoles": "存在无效的角色"
+  },
+  "validation": {
+    "username": "用户名只能包含字母、数字、下划线和中文",
+    "email": "邮箱格式不合法",
+    "password": "密码无效,仅支持8-20个字符，且必须包含至少一个大写字母、一个小写字母、一个数字和一个特殊字符",
+    "leastRoles": "至少需要绑定一个角色",
+    "invalidRole": "无效的角色",
+    "userId": "用户ID不能为空"
+  },
+  "updateProfileFailed": "更新个人信息失败",
+  "updateStatusFailed": "更新用户状态失败",
+  "updateFailed": "用户更新失败",
+  "deleteFailed": "用户删除失败",
+  "userNotFound": "用户不存在"
+}

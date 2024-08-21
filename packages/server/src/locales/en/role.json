@@ -1,0 +1,20 @@
+{
+  "validation": {
+    "name": "Role name cannot be empty",
+    "permissions": "Permissions cannot be empty",
+    "id": "Role ID cannot be empty",
+    "nameExists": "Role name already exists"
+  },
+  "notFound": "Role does not exist",
+  "disabled": "Role is disabled",
+  "deleted": "Role has been deleted",
+  "notAllowed": "No permission to operate system role",
+  "notDeleteSystemRole": "Cannot delete system role",
+  "notDeletedRoleWithUsers": "There are users under this role, cannot delete",
+  "deleteFailed": "Failed to delete role",
+  "updateFailed": "Failed to update role",
+  "createFailed": "Failed to create role",
+  "deleteSuccess": "Role deleted successfully",
+  "updateSuccess": "Role updated successfully",
+  "createSuccess": "Role created successfully"
+}

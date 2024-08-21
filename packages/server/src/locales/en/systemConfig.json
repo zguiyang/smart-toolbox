@@ -1,0 +1,20 @@
+{
+  "getFailed": "system configuration failed to get",
+  "crateFailed": "system configuration failed to create",
+  "updateFailed": "system configuration failed to update",
+  "validation": {
+    "required": {
+      "id": "id is required for system configuration",
+     "loginSessionDuration": "loginSessionDuration is required",
+     "logCleanupPolicy": "logCleanupPolicy is required",
+     "captchaValidityPeriod": "captchaValidityPeriod is required",
+     "systemSenderEmail": "systemSenderEmail is required"
+    },
+    "types": {
+      "loginSessionDuration": "loginSessionDuration must be a number",
+      "logCleanupPolicy": "logCleanupPolicy must be a number",
+      "captchaValidityPeriod": "captchaValidityPeriod must be a number",
+      "systemSenderEmail": "systemSenderEmail must be a valid a string"
+    }
+  }
+}

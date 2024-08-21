@@ -1,0 +1,20 @@
+{
+  "validation": {
+    "name": "角色名不能为空",
+    "permissions": "权限不能为空",
+    "id": "角色ID不能为空",
+    "nameExists": "角色名已存在"
+  },
+  "notFound": "角色不存在",
+  "disabled": "角色已禁用",
+  "deleted": "角色已删除",
+  "notAllowed": "无权操作系统角色",
+  "notDeleteSystemRole": "不能删除系统角色",
+  "notDeletedRoleWithUsers": "该角色下存在用户，不能删除",
+  "deleteFailed": "删除角色失败",
+  "updateFailed": "更新角色失败",
+  "createFailed": "创建角色失败",
+  "deleteSuccess": "删除角色成功",
+  "updateSuccess": "更新角色成功",
+  "createSuccess": "创建角色成功"
+}

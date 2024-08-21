@@ -1,0 +1,20 @@
+{
+  "getFailed": "系统配置获取失败",
+  "crateFailed": "系统配置创建失败",
+  "updateFailed": "系统配置更新失败",
+  "validation": {
+    "required": {
+      "id": "系统配置ID为必填项",
+     "loginSessionDuration": "登录有效期为必填项",
+     "logCleanupPolicy": "日志清理策略为必填项",
+     "captchaValidityPeriod": "验证码有效期为必填项",
+     "systemSenderEmail": "系统发件人邮箱为必填项"
+    },
+    "types": {
+      "loginSessionDuration": "登录有效期类型必须为数字",
+      "logCleanupPolicy": "日志清理策略类型必须为数字",
+      "captchaValidityPeriod": "验证码有效期类型必须为数字",
+      "systemSenderEmail": "系统发件人邮箱类型必须为字符串"
+    }
+  }
+}

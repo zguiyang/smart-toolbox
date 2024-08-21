@@ -1,0 +1,7 @@
+{
+  "success": "操作成功",
+  "requestError": "请求中出现错误",
+  "databaseError": "数据库中出现错误",
+  "databaseTypeError": "数据库中字段类型出现错误",
+  "databaseValidationError": "数据库中字段验证出现错误"
+}

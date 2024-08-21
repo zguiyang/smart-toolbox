@@ -1,0 +1,7 @@
+{
+  "success": "Successful",
+  "requestError": "An error occurred in the request",
+  "databaseError": "An error occurred in the database",
+  "databaseTypeError": "Database type error",
+  "databaseValidationError": "Database Validation error"
+}

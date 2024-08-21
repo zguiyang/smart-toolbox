@@ -1,0 +1,16 @@
+export enum PermissionCodeEnums {
+  USER_Module = 'user',
+  USER_LIST = 'user:list',
+  USER_ALL = 'user:all',
+  USER_DETAIL = 'user:detail',
+  USER_CREATE = 'user:create',
+  USER_UPDATE = 'user:update',
+  USER_DELETE = 'user:delete',
+  ROLE_Module = 'role',
+  ROLE_LIST = 'role:list',
+  ROLE_ALL = 'role:all',
+  ROLE_DETAIL = 'role:detail',
+  ROLE_CREATE = 'role:create',
+  ROLE_UPDATE = 'role:update',
+  ROLE_DELETE = 'role:delete',
+}

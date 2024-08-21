@@ -1,0 +1,20 @@
+{
+  "createFailed": {
+    "exists": "User name or email address already exists",
+    "unknown": "create user failed",
+    "invalidRoles": "has Invalid roles"
+  },
+  "validation": {
+    "username": "The username is invalid; only 1-20 characters are supported",
+    "email": "The email address is invalid",
+    "password": "The password is invalid; only 8-20 characters are supported, and must contain at least one uppercase letter, one lowercase letter, one number, and one special character",
+    "leastRoles": "At least one role needs to be assigned",
+    "invalidRole": "Invalid role",
+    "userId": "User ID cannot be null"
+  },
+  "updateProfileFailed": "update user profile failed",
+  "updateStatusFailed": "update user status failed",
+  "updateFailed": "Update user failed",
+  "deleteFailed": "Delete user failed",
+  "userNotFound": "user not found"
+}

@@ -8,11 +8,11 @@ import { MailService } from './mail.service';
   imports: [
     MailerModule.forRoot({
       transport: {
-        host: 'smtp.163.com',
+        host: '',
         port: 465,
         auth: {
-          user: 'zhaoguiyang18@163.com',
-          pass: 'YZMXLQRVPTIUZQRP',
+          user: '',
+          pass: '',
         },
       },
       defaults: {

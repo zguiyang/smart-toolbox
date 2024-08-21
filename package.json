@@ -8,6 +8,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "client:dev": "pnpm --filter client dev",
+    "server:start": "pnpm --filter server start",
     "format": "pnpm --filter client format && pnpm --filter server format"
   },
   "keywords": [],

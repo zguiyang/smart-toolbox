@@ -1,12 +1,17 @@
-.app-layout-wrapper {
+.default-layout-wrapper {
   @apply flex flex-col min-h-screen w-screen;
 }
 
 .app-layout-header {
+  background-color: hsl(var(--background));
   height: 60px;
-  background-color: #333;
-  color: #fff;
-  @apply flex justify-between items-center px-4;
+  @apply flex justify-between items-center px-8;
+  .center-container {
+    @apply flex-1 justify-center items-center px-4;
+  }
+  .right-container {
+    @apply flex items-center space-x-4 justify-end;
+  }
 }
 .app-layout-main {
   background-color: hsl(var(--background));
@@ -14,7 +19,7 @@
 }
 
 .app-layout-footer {
+  background-color: hsl(var(--background));
   height: 48px;
-  color: #fff;
   @apply text-center;
 }

@@ -12,7 +12,7 @@ const router = createBrowserRouter([
       {
         path: '',
         index: true,
-        element: lazyElementLoader(() => import('@/pages/websites')),
+        element: lazyElementLoader(() => import('@/pages/site-navigation')),
       },
       {
         path: '/favorites',

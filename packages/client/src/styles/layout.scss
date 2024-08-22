@@ -3,9 +3,8 @@
 }
 
 .app-layout-header {
-  background-color: hsl(var(--background));
   height: 60px;
-  @apply flex justify-between items-center px-8 border-b dark:border-b-gray-600 border-b-gray-200;
+  @apply flex justify-between items-center px-8 shadow-sm shadow-gray-300 dark:shadow-gray-700;
   .center-container {
     @apply flex-1 justify-start items-center px-10;
   }
@@ -15,7 +14,7 @@
 }
 .app-layout-main {
   background-color: hsl(var(--background));
-  @apply w-screen flex flex-1 flex-col;
+  @apply w-screen flex flex-1 flex-col mt-1;
 }
 
 .app-layout-footer {

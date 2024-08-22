@@ -1,8 +1,32 @@
 import { AiOutlineGithub } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import { ThemeModeToggle } from '@/components/theme/theme-toggle';
 import { Button } from '@/components/ui/button';
+import { menuList } from '@/menus';
+
+import SearchCommandButton from './search-command-button';
+
+function HeaderNavList() {
+  const location = useLocation();
+
+  return (
+    <nav className={'flex items-center space-x-4 nav-list'}>
+      {menuList.map((item, index) => (
+        <Link
+          to={item.url}
+          key={`nav-link-${index}`}
+          className={[
+            'px-4 py-2 rounded-full text-center text-sm transition-colors hover:text-primary hover:bg-muted',
+            location.pathname === item.url ? 'bg-muted text-primary font-medium' : null,
+          ].join(' ')}
+        >
+          {item.title}
+        </Link>
+      ))}
+    </nav>
+  );
+}
 
 export function LayoutHeader() {
   return (
@@ -11,36 +35,12 @@ export function LayoutHeader() {
         <h1 className="scroll-m-20 text-xl font-bold tracking-tight lg:text-2xl">Smart Utils</h1>
       </div>
       <div className={'center-container'}>
-        <nav className={'flex items-center space-x-4 nav-list'}>
-          <Link
-            to={'/'}
-            className={
-              'px-4 py-2 rounded-full text-center text-sm transition-colors hover:text-primary bg-muted-foreground font-medium'
-            }
-          >
-            Websites
-          </Link>
-          <Link
-            to={'/favorites'}
-            className={
-              'px-4 py-2 rounded-full text-center text-sm transition-colors hover:text-primary text-muted-foreground'
-            }
-          >
-            Favorites
-          </Link>
-          <Link
-            to={'/utilities'}
-            className={
-              'px-4 py-2 rounded-full text-center text-sm transition-colors hover:text-primary text-muted-foreground'
-            }
-          >
-            Utilities
-          </Link>
-        </nav>
+        <HeaderNavList />
       </div>
       <div className={'right-container'}>
+        <SearchCommandButton />
         <ThemeModeToggle />
-        <Button variant={'outline'} size={'icon'}>
+        <Button variant={'ghost'} size={'icon'}>
           <Link to={'https://github.com/zguiyang/smart-toolkit'} target={'_blank'}>
             <AiOutlineGithub className={'text-xl'} />
           </Link>

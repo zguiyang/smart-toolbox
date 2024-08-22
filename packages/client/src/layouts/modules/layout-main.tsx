@@ -1,3 +1,9 @@
+import { Outlet } from 'react-router-dom';
+
 export function LayoutMain() {
-  return <main className={'app-layout-main'}>内容区域</main>;
+  return (
+    <main className={'app-layout-main'}>
+      <Outlet />
+    </main>
+  );
 }

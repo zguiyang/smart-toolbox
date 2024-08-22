@@ -5,9 +5,9 @@
 .app-layout-header {
   background-color: hsl(var(--background));
   height: 60px;
-  @apply flex justify-between items-center px-8;
+  @apply flex justify-between items-center px-8 border-b dark:border-b-gray-600 border-b-gray-200;
   .center-container {
-    @apply flex-1 justify-center items-center px-4;
+    @apply flex-1 justify-start items-center px-10;
   }
   .right-container {
     @apply flex items-center space-x-4 justify-end;

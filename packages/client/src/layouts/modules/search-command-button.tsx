@@ -54,7 +54,6 @@ export default function SearchCommandButton() {
   const commandMenuRef = useRef<CommandMenuHandle>(null);
 
   function handleClick() {
-    console.log(commandMenuRef.current);
     commandMenuRef.current?.open();
   }
 

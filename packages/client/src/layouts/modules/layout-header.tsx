@@ -1,7 +1,8 @@
+import { clsx } from 'clsx';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { Link, useLocation } from 'react-router-dom';
 
-import { ThemeModeToggle } from '@/components/theme/theme-toggle';
+import { ThemeModeToggleButton } from '@/components/theme/theme-toggle';
 import { Button } from '@/components/ui/button';
 import { menuList } from '@/menus';
 
@@ -16,10 +17,10 @@ function HeaderNavList() {
         <Link
           to={item.url}
           key={`nav-link-${index}`}
-          className={[
+          className={clsx(
             'px-4 py-2 rounded-full text-center text-sm transition-colors hover:text-primary hover:bg-muted',
-            location.pathname === item.url ? 'bg-muted text-primary font-medium' : null,
-          ].join(' ')}
+            location.pathname === item.url ? 'bg-muted text-primary font-medium' : null
+          )}
         >
           {item.title}
         </Link>
@@ -39,7 +40,7 @@ export function LayoutHeader() {
       </div>
       <div className={'right-container'}>
         <SearchCommandButton />
-        <ThemeModeToggle />
+        <ThemeModeToggleButton />
         <Button variant={'ghost'} size={'icon'}>
           <Link to={'https://github.com/zguiyang/smart-toolkit'} target={'_blank'}>
             <AiOutlineGithub className={'text-xl'} />

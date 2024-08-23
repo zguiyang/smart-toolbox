@@ -33,7 +33,7 @@ export function LayoutHeader() {
   return (
     <header className={'app-layout-header'}>
       <div className={'left-container'}>
-        <h1 className="scroll-m-20 text-xl font-bold tracking-tight lg:text-2xl">Smart Utils</h1>
+        <h1 className="scroll-m-20 text-xl font-bold tracking-tight lg:text-2xl">Smart ToolBox</h1>
       </div>
       <div className={'center-container'}>
         <HeaderNavList />

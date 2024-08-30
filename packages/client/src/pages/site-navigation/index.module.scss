@@ -1,0 +1,12 @@
+.siteNavigationWrapper {
+  @apply w-full flex flex-1 flex-row;
+}
+.leftSidebar {
+  @apply sm:w-[216px] px-4 py-6 shadow-sm shadow-gray-300;
+}
+.menuWrapper {
+  @apply w-full flex flex-1 flex-col;
+}
+.rightContainer {
+  @apply flex-auto px-4 py-6;
+}

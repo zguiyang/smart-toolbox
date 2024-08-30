@@ -1,7 +1,8 @@
-import { siteConfig } from '#/config/site.config';
 import { clsx } from 'clsx';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { Link, useLocation } from 'react-router-dom';
+
+import { siteConfig } from '#/config/site.config';
 
 import { ThemeModeToggleButton } from '@/components/theme/theme-toggle';
 import { Button } from '@/components/ui/button';
@@ -19,7 +20,8 @@ function HeaderNavList() {
           to={item.url}
           key={`nav-link-${index}`}
           className={clsx(
-            'px-4 py-2 rounded-full text-center text-sm transition-colors hover:text-primary hover:bg-muted',
+            'px-4 py-2 rounded-full text-center text-sm transition-colors',
+            'hover:text-primary hover:bg-muted',
             location.pathname === item.url ? 'bg-muted text-primary font-medium' : null
           )}
         >

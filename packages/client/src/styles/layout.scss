@@ -2,6 +2,10 @@
   @apply flex flex-col min-h-screen w-screen;
 }
 
+.default-layout-container {
+  @apply flex flex-1 flex-col;
+}
+
 .app-layout-header {
   height: 60px;
   @apply flex justify-between items-center px-8 shadow-sm shadow-gray-300 dark:shadow-gray-700;
@@ -12,6 +16,7 @@
     @apply flex items-center space-x-4 justify-end;
   }
 }
+
 .app-layout-main {
   background-color: hsl(var(--background));
   @apply w-screen flex flex-1 flex-col mt-1;

@@ -23,6 +23,9 @@ importers:
 
   packages/client:
     dependencies:
+      '@ant-design/icons':
+        specifier: ^5.5.1
+        version: 5.5.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@ant-design/nextjs-registry':
         specifier: ^1.0.1
         version: 1.0.1(@ant-design/cssinjs@1.21.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(antd@5.21.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@14.2.15(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.4))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -44,6 +47,9 @@ importers:
       react-dom:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
+      react-icons:
+        specifier: ^5.3.0
+        version: 5.3.0(react@18.3.1)
     devDependencies:
       '@types/node':
         specifier: ^20
@@ -4367,6 +4373,11 @@ packages:
     resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
       react: ^18.3.1
+
+  react-icons@5.3.0:
+    resolution: {integrity: sha512-DnUk8aFbTyQPSkCfF8dbX6kQjXA9DktMeJqfjrg6cK9vwQVMxmcA3BfP4QoiztVmEHtwlTgLFsPuH2NskKT6eg==}
+    peerDependencies:
+      react: '*'
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -9307,7 +9318,7 @@ snapshots:
 
   mjml-accordion@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9316,7 +9327,7 @@ snapshots:
 
   mjml-body@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9325,7 +9336,7 @@ snapshots:
 
   mjml-button@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9334,7 +9345,7 @@ snapshots:
 
   mjml-carousel@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9343,7 +9354,7 @@ snapshots:
 
   mjml-cli@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       chokidar: 3.6.0
       glob: 10.4.5
       html-minifier: 4.0.0
@@ -9361,7 +9372,7 @@ snapshots:
 
   mjml-column@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9370,7 +9381,7 @@ snapshots:
 
   mjml-core@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       cheerio: 1.0.0-rc.12
       detect-node: 2.1.0
       html-minifier: 4.0.0
@@ -9386,7 +9397,7 @@ snapshots:
 
   mjml-divider@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9395,7 +9406,7 @@ snapshots:
 
   mjml-group@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9404,7 +9415,7 @@ snapshots:
 
   mjml-head-attributes@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9413,7 +9424,7 @@ snapshots:
 
   mjml-head-breakpoint@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9422,7 +9433,7 @@ snapshots:
 
   mjml-head-font@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9431,7 +9442,7 @@ snapshots:
 
   mjml-head-html-attributes@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9440,7 +9451,7 @@ snapshots:
 
   mjml-head-preview@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9449,7 +9460,7 @@ snapshots:
 
   mjml-head-style@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9458,7 +9469,7 @@ snapshots:
 
   mjml-head-title@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9467,7 +9478,7 @@ snapshots:
 
   mjml-head@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9476,7 +9487,7 @@ snapshots:
 
   mjml-hero@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9485,7 +9496,7 @@ snapshots:
 
   mjml-image@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9494,7 +9505,7 @@ snapshots:
 
   mjml-migrate@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       js-beautify: 1.15.1
       lodash: 4.17.21
       mjml-core: 4.15.3
@@ -9506,7 +9517,7 @@ snapshots:
 
   mjml-navbar@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9515,7 +9526,7 @@ snapshots:
 
   mjml-parser-xml@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       detect-node: 2.1.0
       htmlparser2: 9.1.0
       lodash: 4.17.21
@@ -9523,7 +9534,7 @@ snapshots:
 
   mjml-preset-core@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       mjml-accordion: 4.15.3
       mjml-body: 4.15.3
       mjml-button: 4.15.3
@@ -9555,7 +9566,7 @@ snapshots:
 
   mjml-raw@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9564,7 +9575,7 @@ snapshots:
 
   mjml-section@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9573,7 +9584,7 @@ snapshots:
 
   mjml-social@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9582,7 +9593,7 @@ snapshots:
 
   mjml-spacer@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9591,7 +9602,7 @@ snapshots:
 
   mjml-table@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9600,7 +9611,7 @@ snapshots:
 
   mjml-text@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
     transitivePeerDependencies:
@@ -9609,12 +9620,12 @@ snapshots:
 
   mjml-validator@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
     optional: true
 
   mjml-wrapper@4.15.3:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.7
       lodash: 4.17.21
       mjml-core: 4.15.3
       mjml-section: 4.15.3
@@ -10548,6 +10559,10 @@ snapshots:
       loose-envify: 1.4.0
       react: 18.3.1
       scheduler: 0.23.2
+
+  react-icons@5.3.0(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
   react-is@16.13.1: {}
 

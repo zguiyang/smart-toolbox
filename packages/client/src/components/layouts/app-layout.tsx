@@ -10,6 +10,12 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
       theme={{
         cssVar: true,
         hashed: false,
+        components: {
+          Menu: {
+            collapsedIconSize: 24,
+            iconSize: 18,
+          },
+        },
       }}
     >
       <App>{children}</App>

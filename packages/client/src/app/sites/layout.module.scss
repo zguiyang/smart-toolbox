@@ -1,0 +1,9 @@
+.layout {
+  @apply flex flex-auto flex-row;
+}
+.sider {
+  @apply w-[248px] border-r border-gray-200 bg-white flex flex-col p-4;
+}
+.content {
+  @apply flex-auto overflow-hidden p-4;
+}

@@ -1,9 +1,11 @@
-import { Button } from "@/components/ui/button";
+import { Button, Input, Space } from "antd";
 export default function Home() {
   return (
-    <div className={"app-layout-page"}>
-      <h1>hello, Next.js</h1>
-      <Button variant={"default"}>按钮</Button>
+    <div>
+      <Space direction={"vertical"} size={24}>
+        <Button type={"primary"}>按钮</Button>
+        <Input type={"text"} style={{ width: "300px" }}></Input>
+      </Space>
     </div>
   );
 }

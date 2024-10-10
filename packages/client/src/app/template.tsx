@@ -1,13 +1,4 @@
-import { LayoutHeader } from "@/layouts/layout-header";
-import { LayoutMain } from "@/layouts/layout-main";
-
+import { DefaultLayout } from "@/components/layouts/default-layout";
 export default function Template({ children }: { children: React.ReactNode }) {
-  return (
-    <div className={"default-layout-wrapper"}>
-      <LayoutHeader />
-      <div className={"default-layout-container"}>
-        <LayoutMain>{children}</LayoutMain>
-      </div>
-    </div>
-  );
+  return <DefaultLayout>{children}</DefaultLayout>;
 }

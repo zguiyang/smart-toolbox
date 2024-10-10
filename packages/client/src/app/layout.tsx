@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "@/components/theme/theme-provider";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
+import AppLayout from "@/components/layouts/app-layout";
+
+import "dayjs/locale/zh-cn";
 import "@/styles/index.scss";
 
 export const metadata: Metadata = {
   title: "Smart Toolbox",
-  description: "Smart Personal Toolbox",
+  description: "个人工具箱",
 };
 
 export default function RootLayout({
@@ -13,16 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body className={`antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+        <AntdRegistry>
+          <AppLayout>{children}</AppLayout>
+        </AntdRegistry>
       </body>
     </html>
   );

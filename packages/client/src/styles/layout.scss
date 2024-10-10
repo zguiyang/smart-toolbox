@@ -1,28 +1,10 @@
-.default-layout-wrapper {
-  @apply flex flex-col min-h-screen w-screen;
+.default-layout {
+  @apply relative w-screen h-screen flex flex-auto flex-row;
 }
-
-.default-layout-container {
-  @apply flex flex-1 flex-col;
+.default-layout-sidebar {
+  @apply w-[60px] h-screen flex flex-col bg-white border-r-[1px] py-2;
+  border-color: #e3e3e3;
 }
-
-.app-layout-header {
-  height: 60px;
-  @apply flex justify-between items-center px-8 shadow-sm shadow-gray-300 dark:shadow-gray-700;
-  .center-container {
-    @apply flex-1 justify-start items-center px-10;
-  }
-  .right-container {
-    @apply flex items-center space-x-4 justify-end;
-  }
-}
-
-.app-layout-main {
-  @apply w-screen flex flex-1 flex-col mt-1;
-}
-
-.app-layout-footer {
-  background-color: hsl(var(--background));
-  height: 48px;
-  @apply text-center;
+.default-layout-content {
+  @apply flex-auto flex flex-col p-4;
 }

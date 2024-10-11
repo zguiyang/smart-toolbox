@@ -1,6 +1,5 @@
 "use client";
 
-import { TbCategoryPlus, TbBookmarkEdit } from "react-icons/tb";
 import { Typography, Space, Collapse } from "antd";
 
 import styles from "./layout.module.scss";
@@ -49,7 +48,7 @@ export default function SitesLayout({
           {/*  }}*/}
           {/*></Menu>*/}
           <Collapse
-            expandIconPosition={"right"}
+            expandIconPosition={"end"}
             bordered={false}
             ghost={true}
             items={[

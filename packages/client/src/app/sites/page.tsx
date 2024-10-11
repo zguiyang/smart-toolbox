@@ -99,7 +99,7 @@ export default function SitesPage() {
         </div>
       </div>
       <div className={styles.siteListRowWrapper}>
-        {Array.from({ length: 10 }).map((_, i) => (
+        {Array.from({ length: 3 }).map((_, i) => (
           <div className={styles.siteListRow} key={i}>
             <h4 className={styles.siteListRowTitle}>最近访问</h4>
             <div className={styles.siteList}>

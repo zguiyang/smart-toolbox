@@ -20,7 +20,7 @@
   @apply mt-4 overflow-hidden;
 }
 .siteItem {
-  @apply md:p-4 lg:p-6 rounded-xl bg-white dark:bg-gray-800 w-full shadow-sm hover:shadow-md shadow-gray-300 transition-all duration-300
+  @apply md:p-4 lg:p-6 rounded-xl bg-white w-full shadow-sm hover:shadow-md shadow-gray-300 transition-all duration-300
   cursor-pointer relative;
   &:hover {
     .siteItemSelectButton,.siteItemTagAdd {

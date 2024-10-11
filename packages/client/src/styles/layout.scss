@@ -1,5 +1,5 @@
 .default-layout {
-  @apply relative w-screen h-screen flex flex-auto flex-row;
+  @apply relative w-full h-screen flex flex-auto flex-row;
 }
 .default-layout-sidebar {
   @apply w-[60px] h-screen flex flex-col bg-white border-r-[1px] py-2;
@@ -7,4 +7,5 @@
 }
 .default-layout-content {
   @apply flex-auto flex flex-col;
+  max-width: calc(100% - 60px);
 }

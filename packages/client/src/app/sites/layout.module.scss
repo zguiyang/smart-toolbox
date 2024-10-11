@@ -1,9 +1,10 @@
 .layout {
-  @apply flex flex-auto flex-row;
+  @apply flex flex-auto flex-row h-full overflow-hidden;
 }
 .sider {
-  @apply w-[248px] border-r border-gray-200 bg-white flex flex-col p-4;
+  @apply w-[256px] border-r border-gray-200 bg-white flex flex-col p-4;
 }
 .content {
   @apply flex-auto overflow-hidden p-4;
+  max-width: calc(100% - 256px);
 }

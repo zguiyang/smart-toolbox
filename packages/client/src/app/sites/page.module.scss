@@ -1,12 +1,59 @@
 .wrapper {
+  @apply flex flex-col flex-auto w-full h-full;
 }
 .toolbar {
   @apply flex justify-between items-center
 }
+.actionBar {
+  @apply mt-6 flex items-center justify-between;
+}
+.siteListRowWrapper {
+  @apply mt-6 flex flex-auto flex-col overflow-auto overscroll-auto relative;
+}
+.siteListRow {
+  @apply mb-4;
+}
+.siteListRowTitle {
+  @apply text-xl font-medium;
+}
 .siteList {
-  @apply mt-4;
+  @apply mt-4 overflow-hidden;
 }
-
 .siteItem {
-
+  @apply md:p-4 lg:p-6 rounded-xl bg-white dark:bg-gray-800 w-full shadow-sm hover:shadow-md shadow-gray-300 transition-all duration-300
+  cursor-pointer relative;
+  &:hover {
+    .siteItemSelectButton,.siteItemTagAdd {
+      @apply opacity-100;
+    }
+  }
 }
+.siteItemSelected {
+  @apply border-2 border-blue-500 bg-blue-500/10 dark:border-blue-400 dark:bg-blue-400/50;
+  .siteItemSelectButton,.siteItemTagAdd {
+     @apply opacity-100;
+  }
+}
+.siteItemSelectButton {
+  @apply opacity-0 absolute right-2 top-2 z-10 transition-opacity duration-300;
+}
+
+.siteItemLogo {
+  @apply mr-2;
+}
+.siteItemContent {
+  @apply flex flex-col flex-auto;
+  max-width: calc(100% - 40px - 0.5rem);
+}
+.siteItemTitle {
+  @apply m-0 text-sm font-medium text-gray-900;
+}
+.siteItemDescription {
+  @apply w-full mt-0.5 text-xs text-gray-500 whitespace-nowrap overflow-hidden text-ellipsis;
+}
+.siteItemTags {
+}
+.siteItemTagAdd {
+  @apply opacity-0 transition-all duration-300;
+}
+.siteItemActions {}

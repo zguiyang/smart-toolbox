@@ -1,5 +1,5 @@
 /**
- * Some default system configurations, such as: login session duration, log cleanup policy, captcha validity period, etc.
+ * Some default system configurations, such as: sign-in session duration, log cleanup policy, captcha validity period, etc.
  **/
 import { SystemConfig } from '../modules/system-config/schemas/system-config.schema';
 

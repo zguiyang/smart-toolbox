@@ -32,7 +32,7 @@ export class LoginAuthGuard implements CanActivate {
 
     const token = this.extractTokenFromHeader(request);
     if (!token) {
-      throw new UnauthorizedException(this.i18nService.t('auth.login.notLoginIn'));
+      throw new UnauthorizedException(this.i18nService.t('auth.sign-in.notLoginIn'));
     }
 
     try {
@@ -42,7 +42,7 @@ export class LoginAuthGuard implements CanActivate {
 
       const loginUserToken = await this.redisService.getLoginToken(payload.userId);
       if (!loginUserToken || loginUserToken !== token) {
-        throw new UnauthorizedException(this.i18nService.t('auth.login.loginFailed'));
+        throw new UnauthorizedException(this.i18nService.t('auth.sign-in.loginFailed'));
       }
       const { data: loginUser } = await this.userService.getCurrentLoginUser(payload.userId);
       if (!loginUser) {
@@ -50,7 +50,7 @@ export class LoginAuthGuard implements CanActivate {
       }
 
       if (!loginUser.isInit) {
-        throw new UnauthorizedException(this.i18nService.t('auth.login.initPasswordFailed'));
+        throw new UnauthorizedException(this.i18nService.t('auth.sign-in.initPasswordFailed'));
       }
 
       request['loginUser'] = {
@@ -58,7 +58,7 @@ export class LoginAuthGuard implements CanActivate {
         userId: payload.userId,
       } as LoginUserInfo;
     } catch (err) {
-      throw new UnauthorizedException(err || this.i18nService.t('auth.login.loginExpired'));
+      throw new UnauthorizedException(err || this.i18nService.t('auth.sign-in.loginExpired'));
     }
 
     this.logger.debug('LoginAuthGuard completed...');

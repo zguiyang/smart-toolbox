@@ -27,7 +27,7 @@ export class JwtService extends NestJwtService {
     const success = await this.redisService.setLoginToken(user._id.toString(), accessToken);
 
     if (!success) {
-      throw new Error('set login token error');
+      throw new Error('set sign-in token error');
     }
 
     return {

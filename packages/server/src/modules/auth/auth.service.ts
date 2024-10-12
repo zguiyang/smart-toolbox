@@ -34,7 +34,7 @@ export class AuthService {
   }
 
   /**
-   * user login function
+   * user sign-in function
    * @param params
    * @returns access token
    * **/
@@ -52,14 +52,14 @@ export class AuthService {
       return {
         code: AuthCodeEnums.INVALID_ACCOUNT,
         data: null,
-        msg: validatedUser.status === UserStatus.DISABLED ? this.i18nService.t('auth.login.userDisabled') : this.i18nService.t('auth.validation.notFound'),
+        msg: validatedUser.status === UserStatus.DISABLED ? this.i18nService.t('auth.sign-in.userDisabled') : this.i18nService.t('auth.validation.notFound'),
       };
     }
     if (!validatedUser.isInit) {
       return {
         code: AuthCodeEnums.INIT_USER_PASSWORD,
         data: null,
-        msg: this.i18nService.t('auth.login.initPasswordFailed'),
+        msg: this.i18nService.t('auth.sign-in.initPasswordFailed'),
       };
     }
 

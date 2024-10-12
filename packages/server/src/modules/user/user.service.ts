@@ -45,7 +45,7 @@ export class UserService {
   }
 
   /**
-   * get current login user info
+   * get current sign-in user info
    * **/
   async getCurrentLoginUser(userId: string): Promise<ApiCommonResponse<LoginUserInfo>> {
     const user = await this.userModel

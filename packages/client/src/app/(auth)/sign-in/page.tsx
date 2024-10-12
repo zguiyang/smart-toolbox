@@ -1,10 +1,11 @@
 "use client";
 
 import { Form, Input, Button, Space, Typography, Divider } from "antd";
+import { MdOutlineEmail, MdLockOutline } from "react-icons/md";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 
-export default function RegisterPage() {
+export default function LoginPage() {
   return (
     <div
       className={
@@ -13,37 +14,31 @@ export default function RegisterPage() {
     >
       <div
         className={
-          "w-[480px] bg-white rounded-lg shadow-lg px-8 py-12 flex flex-col"
+          "w-[480px] bg-white rounded-2xl shadow-lg px-8 py-12 flex flex-col"
         }
       >
         <h2 className={"text-xl font-medium text-gray-900 text-center"}>
-          注册你的账号
+          登录你的账号
         </h2>
         <div className={"mt-4"}>
           <Form size={"large"}>
             <Form.Item>
-              <Input placeholder={"邮箱"} variant={"filled"}></Input>
-            </Form.Item>
-            <Form.Item>
               <Input
-                placeholder={"验证码"}
-                suffix={<Button type={"link"}>获取验证码</Button>}
+                placeholder={"邮箱"}
+                prefix={<MdOutlineEmail />}
+                variant={"outlined"}
               ></Input>
             </Form.Item>
             <Form.Item>
               <Space direction={"vertical"} className={"w-full"} size={4}>
                 <Input.Password
                   placeholder={"密码"}
-                  variant={"filled"}
+                  prefix={<MdLockOutline />}
+                  variant={"outlined"}
                 ></Input.Password>
-              </Space>
-            </Form.Item>
-            <Form.Item>
-              <Space direction={"vertical"} className={"w-full"} size={4}>
-                <Input.Password
-                  placeholder={"确认密码"}
-                  variant={"filled"}
-                ></Input.Password>
+                <Button type={"link"} size={"small"}>
+                  忘记密码？
+                </Button>
               </Space>
             </Form.Item>
             <Form.Item>
@@ -53,11 +48,11 @@ export default function RegisterPage() {
                 className={"w-full text-center"}
               >
                 <Button type={"primary"} block>
-                  注册
+                  登录
                 </Button>
                 <span className={"text-xs text-gray-800"}>
-                  已有账号？
-                  <Typography.Link href={"/sign-in"}>去登录</Typography.Link>
+                  还没有账号？
+                  <Typography.Link href={"/register"}>去注册</Typography.Link>
                 </span>
               </Space>
             </Form.Item>

@@ -58,11 +58,11 @@ export class RedisService extends Redis implements OnModuleDestroy {
   async setLoginToken(key: string, value: string) {
     const { data: systemConfig } = await this.systemConfigService.getSystemConfig();
     const result = await this.set(`login_token:${key}`, value, 'EX', systemConfig.loginSessionDuration * 60 * 60);
-    return result === 'OK' ? Promise.resolve(true) : Promise.reject('redis set login token failed');
+    return result === 'OK' ? Promise.resolve(true) : Promise.reject('redis set sign-in token failed');
   }
 
   async removeLoginToken(key: string) {
     const result = await this.del(`login_token:${key}`);
-    return result === 1 ? Promise.resolve(true) : Promise.reject('redis remove login token failed');
+    return result === 1 ? Promise.resolve(true) : Promise.reject('redis remove sign-in token failed');
   }
 }

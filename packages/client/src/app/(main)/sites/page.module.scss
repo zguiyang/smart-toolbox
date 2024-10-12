@@ -1,14 +1,14 @@
 .wrapper {
-  @apply flex flex-col flex-auto w-full h-full;
+  @apply flex flex-col flex-auto h-full w-full;
 }
 .toolbar {
-  @apply flex justify-between items-center
+  @apply flex justify-between items-center;
 }
 .actionBar {
   @apply mt-6 flex items-center justify-between;
 }
 .siteListRowWrapper {
-  @apply mt-6 flex flex-auto flex-col overflow-auto overscroll-auto relative;
+  @apply mt-6 flex flex-auto flex-col overflow-y-auto relative;
 }
 .siteListRow {
   @apply mb-4;

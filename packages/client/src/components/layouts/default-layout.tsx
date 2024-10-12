@@ -4,19 +4,29 @@ import { useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { Avatar, Menu } from "antd";
 import type { MenuProps } from "antd";
-import { AiOutlineCompass, AiOutlineRead, AiOutlineBook } from "react-icons/ai";
+import {
+  AiOutlineCompass,
+  AiOutlineRead,
+  AiOutlineBook,
+  AiOutlineTags,
+} from "react-icons/ai";
 
 type MenuItem = Required<MenuProps>["items"][number];
 const items: MenuItem[] = [
   {
-    label: "网站书签",
+    label: "书签",
     key: "/sites",
     icon: <AiOutlineCompass />,
   },
   {
-    label: "文章阅读",
+    label: "阅读",
     key: "/articles",
     icon: <AiOutlineRead />,
+  },
+  {
+    label: "标签",
+    key: "/tags",
+    icon: <AiOutlineTags />,
   },
   {
     label: "备忘录",
@@ -38,7 +48,7 @@ export function DefaultLayout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className={"default-layout"}>
-      <div className={"default-layout-sidebar"}>
+      <aside className={"default-layout-sidebar"}>
         <div className={"sidebar-top"}>
           <div className={"flex justify-center sidebar-avatar"}>
             <Avatar
@@ -58,8 +68,8 @@ export function DefaultLayout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
         <div className={"sidebar-actions"}></div>
-      </div>
-      <div className={"default-layout-content"}>{children}</div>
+      </aside>
+      <main className={"default-layout-content"}>{children}</main>
     </div>
   );
 }

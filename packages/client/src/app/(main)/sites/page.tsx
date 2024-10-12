@@ -24,6 +24,7 @@ import {
   Dropdown,
 } from "antd";
 import clsx from "clsx";
+import AddEditSiteModal from "./components/add-edit-site-modal";
 
 import styles from "./page.module.scss";
 export default function SitesPage() {
@@ -157,6 +158,8 @@ export default function SitesPage() {
           </div>
         ))}
       </div>
+      {/* add or edit site modal */}
+      <AddEditSiteModal title={"添加网页书签"} isEdit={false} visible={false} />
     </div>
   );
 }

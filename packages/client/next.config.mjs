@@ -4,10 +4,24 @@ const nextConfig = {
     return [
       {
         source: "/sites",
-        destination: "/sites/all",
+        destination: "/sites/inbox",
+        permanent: true,
+      },
+      {
+        source: "/articles",
+        destination: "/articles/inbox",
         permanent: true,
       },
     ];
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "api.vvhan.com",
+        pathname: "**",
+      },
+    ],
   },
 };
 

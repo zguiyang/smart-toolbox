@@ -1,7 +1,12 @@
 "use client";
 import clsx from "clsx";
-import { AutoComplete, Button, Input, Tooltip, Typography } from "antd";
-import { AiOutlinePlus, AiOutlineSearch } from "react-icons/ai";
+import { AutoComplete, Button, Input, Dropdown, Typography } from "antd";
+import {
+  AiOutlinePlus,
+  AiOutlineSearch,
+  AiOutlineTag,
+  AiOutlineFileText,
+} from "react-icons/ai";
 
 export interface PageContainerProps {
   children: React.ReactNode;
@@ -31,13 +36,28 @@ export function PageContainer({
             placeholder={"输入名称进行搜索"}
           ></Input>
         </AutoComplete>
-        <Tooltip title={"添加书签"}>
+        <Dropdown
+          menu={{
+            items: [
+              {
+                key: "site",
+                label: "添加书签",
+                icon: <AiOutlineTag color={"#1890ff"} size={20} />,
+              },
+              {
+                key: "article",
+                label: "添加文章",
+                icon: <AiOutlineFileText color={"#c518ff"} size={20} />,
+              },
+            ],
+          }}
+        >
           <Button
             type={"primary"}
             shape={"circle"}
             icon={<AiOutlinePlus />}
           ></Button>
-        </Tooltip>
+        </Dropdown>
       </div>
       <div className={"page-container-content"}>{children}</div>
     </div>

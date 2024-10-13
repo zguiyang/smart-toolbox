@@ -21,11 +21,9 @@ export default function SitesLayout({
       <SideContainer>
         <Space direction={"vertical"} size={8}>
           <Typography.Title level={4} style={{ marginBottom: 0 }}>
-            网页书签
+            文章
           </Typography.Title>
-          <Typography.Text type={"secondary"}>
-            收藏的所有网站书签
-          </Typography.Text>
+          <Typography.Text type={"secondary"}>收藏的所有文章</Typography.Text>
         </Space>
         <div className={"mt-4"}>
           <ul className={"space-y-2"}>

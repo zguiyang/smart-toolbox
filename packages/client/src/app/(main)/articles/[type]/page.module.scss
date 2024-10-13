@@ -1,0 +1,56 @@
+.wrapper {
+  @apply flex flex-col flex-auto h-full w-full;
+}
+.actionBar {
+  @apply mt-6 flex items-center justify-between;
+}
+.articleListRowWrapper {
+  @apply mt-6 flex flex-auto flex-col overflow-y-auto relative;
+}
+.articleListRow {
+  @apply mb-4;
+}
+.articleListRowTitle {
+  @apply text-xl font-medium;
+}
+.articleList {
+  @apply mt-4 overflow-hidden;
+}
+.articleItem {
+  @apply md:p-4 lg:p-6 rounded-xl bg-white w-full shadow-sm hover:shadow-md shadow-gray-300 transition-all duration-300
+  cursor-pointer relative;
+  &:hover {
+    .articleItemSelectButton,.articleItemTagAdd {
+      @apply opacity-100;
+    }
+  }
+}
+.articleItemSelected {
+  @apply border-2 border-blue-500 bg-blue-500/10 dark:border-blue-400 dark:bg-blue-400/50;
+  .articleItemSelectButton,.articleItemTagAdd {
+     @apply opacity-100;
+  }
+}
+.articleItemSelectButton {
+  @apply opacity-0 absolute right-2 top-2 z-10 transition-opacity duration-300;
+}
+
+.articleItemLogo {
+  @apply mr-2;
+}
+.articleItemContent {
+  @apply flex flex-col flex-auto;
+  max-width: calc(100% - 40px - 0.5rem);
+}
+.articleItemTitle {
+  @apply m-0 text-sm font-medium text-gray-900;
+}
+.articleItemDescription {
+  @apply w-full mt-0.5 text-xs text-gray-500 whitespace-nowrap overflow-hidden text-ellipsis;
+}
+.articleItemTags {
+}
+.articleItemTagAdd {
+  @apply opacity-0 transition-all duration-300;
+}
+.articleItemActions {}

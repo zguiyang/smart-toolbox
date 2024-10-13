@@ -1,7 +1,0 @@
-.layout {
-  @apply flex flex-auto flex-row h-full overflow-hidden;
-}
-.content {
-  @apply mx-auto flex-auto overflow-hidden;
-  max-width: calc(100% - 256px);
-}

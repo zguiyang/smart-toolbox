@@ -28,11 +28,11 @@ const items: MenuItem[] = [
     key: "/tags",
     icon: <AiOutlineTags />,
   },
-  {
-    label: "备忘录",
-    key: "/favorites",
-    icon: <AiOutlineBook />,
-  },
+  // {
+  //   label: "备忘录",
+  //   key: "/favorites",
+  //   icon: <AiOutlineBook />,
+  // },
 ];
 export function DefaultLayout({ children }: { children: React.ReactNode }) {
   const router = useRouter();

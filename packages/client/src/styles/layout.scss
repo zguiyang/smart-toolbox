@@ -9,3 +9,13 @@
   @apply flex-auto flex flex-col;
   max-width: calc(100% - 60px);
 }
+
+.page-container {
+  @apply relative w-full h-full overflow-auto  p-10 flex flex-col flex-auto;
+  .page-container-header {
+    @apply flex justify-between items-center;
+  }
+  .page-container-content {
+    @apply flex flex-col flex-1;
+  }
+}

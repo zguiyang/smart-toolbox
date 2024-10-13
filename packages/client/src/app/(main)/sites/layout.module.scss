@@ -1,10 +1,7 @@
 .layout {
   @apply flex flex-auto flex-row h-full overflow-hidden;
 }
-.sider {
-  @apply w-[256px] border-r border-gray-200 bg-white flex flex-col p-4;
-}
 .content {
-  @apply mx-auto flex-auto overflow-hidden p-10;
-  max-width: 80%;
+  @apply mx-auto flex-auto overflow-hidden;
+  max-width: calc(100% - 256px);
 }

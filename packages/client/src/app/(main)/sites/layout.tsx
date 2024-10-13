@@ -8,6 +8,9 @@ import {
   AiOutlineEye,
 } from "react-icons/ai";
 
+import { PageContainer } from "@/components/layouts/page-container";
+import { SideContainer } from "@/components/layouts/side-container";
+
 import styles from "./layout.module.scss";
 
 export default function SitesLayout({
@@ -17,7 +20,7 @@ export default function SitesLayout({
 }) {
   return (
     <div className={styles.layout}>
-      <aside className={styles.sider}>
+      <SideContainer>
         <Space direction={"vertical"} size={8}>
           <Typography.Title level={4} style={{ marginBottom: 0 }}>
             网页书签
@@ -74,8 +77,10 @@ export default function SitesLayout({
             </li>
           </ul>
         </div>
-      </aside>
-      <section className={styles.content}>{children}</section>
+      </SideContainer>
+      <section className={styles.content}>
+        <PageContainer>{children}</PageContainer>
+      </section>
     </div>
   );
 }
